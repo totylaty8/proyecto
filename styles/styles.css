@@ -1,0 +1,129 @@
+/* Estilos basicos para las cinco paginas del proyecto */
+
+/* Colores principales del sitio */
+:root {
+    --color-primario: #1D3557;
+    --color-secundario: #F7F1E3;
+    --color-acento: #B54735;
+    --color-texto: #263238;
+    --color-blanco: #FFFFFF;
+}
+
+/* Estilos generales */
+.pagina {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Fondo distinto para la pagina de preguntas frecuentes */
+.pagina-faq {
+    background-color: #EEE7F6;
+}
+
+/* Encabezado y menu */
+.nav-list {
+    list-style: none;
+}
+
+.site-header {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.site-logo {
+    color: var(--color-blanco);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-logo-subtitle {
+    color: var(--color-secundario);
+    font-size: 16px;
+}
+
+.nav-item {
+    display: list-item;
+}
+
+.nav-link {
+    color: var(--color-blanco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link-active {
+    color: #FFE082;
+}
+
+/* Titulos */
+.page-title {
+    color: var(--color-primario);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-title {
+    color: var(--color-acento);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* Fondos de las secciones */
+.button-link {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Redes sociales */
+.red-social {
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+}
+
+.logo-facebook {
+    width: 48px;
+}
+
+.logo-instagram {
+    width: 48px;
+}
+
+.logo-tiktok {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.logo-tiktok {
+    color: #111111;
+}
+
+.social-name {
+    font-weight: 700;
+}
+
+.note-text {
+    color: #455A64;
+    font-size: 14px;
+}
+
+/* Pie de pagina */
+.site-footer {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.footer-text {
+    color: var(--color-blanco);
+    font-size: 14px;
+}

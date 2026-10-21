@@ -1,50 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <meta name="description" content="Canales de contacto y redes sociales de Final Fantasy Fan Page.">
+    <title>Contacto | Final Fantasy Fan Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
-
-<body>
-    <nav>
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="sobremi.html">Sobre mi</a>
-            </li>
-            <li>
-                <a href="proyectos.html">Proyectos</a>
-            </li>
-            <li>
-                <a href="faq.html">FAQ</a>
-            </li>
-            <li>
-                <a href="contactos.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Contacto</h1>
-     </header>
- 
-    <section>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Tiktok</li>
+<body class="pagina">
+    <header class="site-header">
+        <a class="site-logo" href="../index.html">Final Fantasy Fan Page</a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-active" href="contacto.html" aria-current="page">Contacto</a></li>
             </ul>
-    </section>
-    <article>
-        <img src="../Assets/3.jpg" alt="">
-        <figcaption>Final Fantasy</figcaption>
-    </article>
-    <footer>
-        <p>&copy; Tomas Onetto - Estudiante de Desarrollo Web</p>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Sigamos en contacto</p>
+            <h1 class="page-title">Contacto</h1>
+            <p>Encontrá nuestros canales sociales y mantenete al día con las novedades.</p>
+        </section>
+        <section class="content-section">
+            <h2 class="section-title">Redes sociales</h2>
+            <div class="redes-sociales">
+                <div class="red-social">
+                    <img class="logo-facebook" src="../Assets/facebook.png" alt="Logo de Facebook">
+                    <p class="social-name">Facebook</p>
+                </div>
+                <div class="red-social">
+                    <img class="logo-instagram" src="../Assets/instagram.png" alt="Logo de Instagram">
+                    <p class="social-name">Instagram</p>
+                </div>
+                <div class="red-social">
+                    ♪
+                    <p class="social-name">TikTok</p>
+                </div>
+            </div>
+            <p class="note-text"></p>
+        </section>
+        <article class="image-section">
+            <figure class="feature-figure">
+                <img class="feature-image" src="../Assets/3.jpg" alt="Imagen relacionada con Final Fantasy">
+                <figcaption>El mundo de Final Fantasy</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <p class="footer-text">&copy; Tomás Onetto - Estudiante de Desarrollo Web</p>
     </footer>
 </body>
-
 </html>

@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi</title>
+    <meta name="description" content="Conocé al creador de esta página de fans de Final Fantasy.">
+    <title>Sobre mí | Final Fantasy Fan Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
-
-<body>
-    <nav>
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="sobremi.html">Sobre mi</a>
-            </li>
-            <li>
-                <a href="proyectos.html">Proyectos</a>
-            </li>
-            <li>
-                <a href="faq.html">FAQ</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Sobre mi</h1>
+<body class="pagina">
+    <header class="site-header">
+        <a class="site-logo" href="../index.html">Final Fantasy Fan Page</a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-active" href="sobremi.html" aria-current="page">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <p>Mi nombre es Tomas Onetto y estoy haciendo mi primer proyecto de sitio web y soy fanatico de los JRPG, mas
-        precisamente la saga Final Fantasy</p>
-    <article>
-        <img src="../Assets/4.jpg" alt="">
-        <figcaption>Final Fantasy III</figcaption>
-    </article>
-     <footer>
-        <p>&copy; Tomas Onetto - Estudiante de Desarrollo Web</p>
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Detrás de la página</p>
+            <h1 class="page-title">Sobre mí</h1>
+            <p>Un poco sobre quien está creando este espacio para fans.</p>
+        </section>
+        <section class="content-section">
+            <h2 class="section-title">¡Hola, aventurero!</h2>
+            <p>Mi nombre es Tomás Onetto y estoy haciendo mi primer proyecto de sitio web. Soy fanático de los JRPG, más precisamente de la saga Final Fantasy.</p>
+        </section>
+        <article class="image-section">
+            <figure class="feature-figure">
+                <img class="feature-image" src="../Assets/4.jpg" alt="Imagen relacionada con Final Fantasy III">
+                <figcaption>Una aventura clásica de Final Fantasy</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <p class="footer-text">&copy; Tomás Onetto - Estudiante de Desarrollo Web</p>
     </footer>
 </body>
-
 </html>

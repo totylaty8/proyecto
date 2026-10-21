@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+    <meta name="description" content="Preguntas frecuentes y consejos para jugar Final Fantasy.">
+    <title>FAQ | Final Fantasy Fan Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
-
-<body>
-    <nav>
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="sobremi.html">Sobre mi</a>
-            </li>
-            <li>
-                <a href="proyectos.html">Proyectos</a>
-            </li>
-            <li>
-                <a href="faq.html">FAQ</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <h1>FAQ</h1>
+<body class="pagina pagina-faq">
+    <header class="site-header">
+        <a class="site-logo" href="../index.html">Final Fantasy Fan Page</a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-active" href="faq.html" aria-current="page">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <h2>Mecanicas de juego y progesion</h2>
-    <section>
-        <ul>
-            <li>Mejores builds</li>
-            <li>Subir de nivel rapido</li>
-            <li>Puntos de no retorno</li>
-        </ul>
-    </section>
-    <h3>Contenido opcional</h3>
-    <section>
-        <ul>
-            <li>Jefes secretos</li>
-            <li>Armas opcionales</li>
-        </ul>
-    </section>
-    <article>
-        <img src="../Assets/guide.jpg" alt="">
-        <figcaption>Logo Final Fantasy</figcaption>
-    </article>
-    <footer>
-        <p>&copy; Tomas Onetto - Estudiante de Desarrollo Web</p>
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Consejos para jugadores</p>
+            <h1 class="page-title">Preguntas frecuentes</h1>
+            <p>Temas útiles para avanzar en tus aventuras.</p>
+        </section>
+        <section class="content-section">
+            <h2 class="section-title">Mecánicas de juego y progresión</h2>
+            <ul class="feature-list">
+                <li class="feature-item">Mejores builds</li>
+                <li class="feature-item">Subir de nivel rápido</li>
+                <li class="feature-item">Puntos de no retorno</li>
+            </ul>
+        </section>
+        <section class="content-section">
+            <h2 class="section-title">Contenido opcional</h2>
+            <ul class="feature-list">
+                <li class="feature-item">Jefes secretos</li>
+                <li class="feature-item">Armas opcionales</li>
+            </ul>
+        </section>
+        <article class="image-section">
+            <figure class="feature-figure">
+                <img class="feature-image" src="../Assets/guide.jpg" alt="Imagen ilustrativa de una guía de Final Fantasy">
+                <figcaption>Guías para explorar cada aventura</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <p class="footer-text">&copy; Tomás Onetto - Estudiante de Desarrollo Web</p>
     </footer>
 </body>
-
 </html>

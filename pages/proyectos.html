@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
+    <meta name="description" content="Listado de juegos de la saga Final Fantasy.">
+    <title>Proyectos | Final Fantasy Fan Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
-
-<body>
-    <nav>
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="sobremi.html">Sobre mi</a>
-            </li>
-            <li>
-                <a href="proyectos.html">Proyectos</a>
-            </li>
-            <li>
-                <a href="faq.html">FAQ</a>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Proyectos</h1>
+<body class="pagina">
+    <header class="site-header">
+        <a class="site-logo" href="../index.html">Final Fantasy Fan Page</a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link nav-link-active" href="proyectos.html" aria-current="page">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <h2>Lista de juegos</h2>
-    <section>
-        <ul>
-            <li>Final Fantasy</li>
-            <li>Final Fantasy 2</li>
-            <li>Final Fantasy 3</li>
-        </ul>
-    </section>
-    <article>
-        <img src="../Assets/2.jpg" alt="">
-        <figcaption>Final Fantasy II</figcaption>
-    </article>
-    <footer>
-        <p>&copy; Tomas Onetto - Estudiante de Desarrollo Web</p>
+    <main class="container">
+        <section class="page-intro">
+            <p class="eyebrow">Conocé la saga</p>
+            <h1 class="page-title">Proyectos</h1>
+            <p>Algunos de los títulos clásicos que forman parte de esta franquicia.</p>
+        </section>
+        <section class="content-section">
+            <h2 class="section-title">Lista de juegos</h2>
+            <ul class="feature-list">
+                <li class="feature-item">Final Fantasy</li>
+                <li class="feature-item">Final Fantasy II</li>
+                <li class="feature-item">Final Fantasy III</li>
+            </ul>
+        </section>
+        <article class="image-section">
+            <figure class="feature-figure">
+                <img class="feature-image" src="../Assets/2.jpg" alt="Imagen de Final Fantasy II">
+                <figcaption>Final Fantasy II</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <p class="footer-text">&copy; Tomás Onetto - Estudiante de Desarrollo Web</p>
     </footer>
 </body>
-
 </html>

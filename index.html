@@ -1,52 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Final Fantasy</title>
+    <meta name="description" content="Un punto de encuentro para fans de la saga Final Fantasy.">
+    <title>Final Fantasy Fan Page | Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-
-<body>
-    <nav>
-        <ul>
-            <li>
-                <a href="./index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="./pages/sobremi.html">Sobre mi</a>
-            </li>
-            <li>
-                <a href="./pages/proyectos.html">Proyectos</a>
-            </li>
-            <li>
-                <a href="./pages/faq.html">FAQ</a>
-            </li>
-            <li>
-                <a href="./pages/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Final Fantasy Fan Page</h1>
+<body class="pagina">
+    <header class="site-header">
+        <a class="site-logo" href="index.html">Final Fantasy Fan Page</a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link nav-link-active" href="index.html" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/sobremi.html">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <h2>Informacion</h2>
-    <p>Esto es una pagina de fans de Final Fantasy que sera un punto de encuentro digital dedicado a la icónica
-        franquicia de videojuegos de Square Enix</p>
-    <section>
-        <ul></ul>
-        <li>Enciclopedias y bases de datos</li>
-        <li>Noticias y novedades</li>
-        <li>Guias</li>
-        </ul>
-    </section>
-    <article>
-        <img src="./Assets/final.jpg" alt="">
-        <figcaption>Logo Final Fantasy</figcaption>
-    </article>
-    <footer>
-        <p>&copy; Tomas Onetto - Estudiante de Desarrollo Web</p>
+    <main class="container">
+        <section class="hero-section">
+            <p class="eyebrow">Un universo de aventuras</p>
+            <h1 class="page-title">Final Fantasy Fan Page</h1>
+            <p>Un punto de encuentro digital dedicado a la icónica franquicia de videojuegos de Square Enix.</p>
+            <a class="button-link" href="pages/proyectos.html">Explorar los juegos</a>
+        </section>
+        <section class="content-section">
+            <h2 class="section-title">Información</h2>
+            <p>Esta página está pensada para compartir información y contenido con otros fans de Final Fantasy.</p>
+            <ul class="feature-list">
+                <li class="feature-item">Enciclopedias y bases de datos</li>
+                <li class="feature-item">Noticias y novedades</li>
+                <li class="feature-item">Guías para tus aventuras</li>
+            </ul>
+        </section>
+        <section class="image-section">
+            <figure class="feature-figure">
+                <img class="feature-image" src="Assets/final.jpg" alt="Logo de Final Fantasy">
+                <figcaption>El universo de Final Fantasy</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p class="footer-text">&copy; Tomás Onetto - Estudiante de Desarrollo Web</p>
     </footer>
 </body>
-
 </html>
