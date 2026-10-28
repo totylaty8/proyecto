@@ -1,3 +1,9 @@
+/* Reset general del Box Model */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilos basicos para las cinco paginas del proyecto */
 
 /* Colores principales del sitio */
@@ -25,10 +31,19 @@
 
 /* Encabezado y menu */
 .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     list-style: none;
 }
 
 .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
     background-color: var(--color-primario);
     color: var(--color-blanco);
 }
@@ -47,7 +62,8 @@
 }
 
 .nav-item {
-    display: list-item;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link {
@@ -59,6 +75,41 @@
 .nav-link:hover,
 .nav-link-active {
     color: #FFE082;
+}
+
+/* Espaciado y distribucion del contenido de Inicio y Proyectos */
+.container {
+    padding: 20px;
+}
+
+.hero-section,
+.page-intro,
+.content-section,
+.image-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.feature-item {
+    padding: 20px;
+    background-color: #EAF0F6;
+}
+
+.feature-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 /* Titulos */
@@ -100,12 +151,9 @@
 }
 
 .logo-tiktok {
+    color: #111111;
     font-size: 32px;
     font-weight: 700;
-}
-
-.logo-tiktok {
-    color: #111111;
 }
 
 .social-name {
