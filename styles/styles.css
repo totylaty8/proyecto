@@ -1,10 +1,9 @@
-/* Reset general del Box Model */
+/* Reset general */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-/* Estilos basicos para las cinco paginas del proyecto */
 
 /* Colores principales del sitio */
 :root {
@@ -15,7 +14,7 @@
     --color-blanco: #FFFFFF;
 }
 
-/* Estilos generales */
+/* Estilos generales: la base está pensada para celulares (Mobile First) */
 .pagina {
     background-color: var(--color-secundario);
     color: var(--color-texto);
@@ -24,25 +23,16 @@
     line-height: 1.6;
 }
 
-/* Fondo distinto para la pagina de preguntas frecuentes */
 .pagina-faq {
     background-color: #EEE7F6;
 }
 
-/* Encabezado y menu */
-.nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-}
-
+/* Encabezado y navegación */
 .site-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
     padding: 20px;
     background-color: var(--color-primario);
     color: var(--color-blanco);
@@ -51,7 +41,7 @@
 .site-logo {
     color: var(--color-blanco);
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     text-decoration: none;
 }
@@ -59,6 +49,13 @@
 .site-logo-subtitle {
     color: var(--color-secundario);
     font-size: 16px;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    list-style: none;
 }
 
 .nav-item {
@@ -77,9 +74,9 @@
     color: #FFE082;
 }
 
-/* Espaciado y distribucion del contenido de Inicio y Proyectos */
+/* Contenido general: en mobile las secciones se apilan */
 .container {
-    padding: 20px;
+    padding: 16px;
 }
 
 .hero-section,
@@ -88,15 +85,17 @@
 .image-section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     padding: 20px;
     margin-bottom: 20px;
+    min-width: 0;
 }
 
+/* Listas y tarjetas */
 .feature-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    gap: 16px;
     list-style: none;
 }
 
@@ -112,7 +111,13 @@
     gap: 10px;
 }
 
-/* Titulos */
+.feature-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Títulos */
 .page-title {
     color: var(--color-primario);
     font-family: 'Montserrat', Arial, sans-serif;
@@ -127,9 +132,16 @@
     font-weight: 700;
 }
 
+.eyebrow {
+    color: var(--color-acento);
+    font-weight: 700;
+}
 
-/* Fondos de las secciones */
+/* Botones y enlaces */
 .button-link {
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 20px;
     background-color: var(--color-acento);
     color: var(--color-blanco);
     font-weight: 700;
@@ -142,12 +154,10 @@
     color: var(--color-texto);
 }
 
-.logo-facebook {
-    width: 48px;
-}
-
+.logo-facebook,
 .logo-instagram {
     width: 48px;
+    max-width: 100%;
 }
 
 .logo-tiktok {
@@ -165,8 +175,9 @@
     font-size: 14px;
 }
 
-/* Pie de pagina */
+/* Pie de página */
 .site-footer {
+    padding: 20px;
     background-color: var(--color-primario);
     color: var(--color-blanco);
 }
@@ -174,4 +185,82 @@
 .footer-text {
     color: var(--color-blanco);
     font-size: 14px;
+}
+
+/* TABLET: aprovechamos el ancho extra sin cambiar todavía al layout desktop */
+@media (min-width: 768px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container {
+        padding: 24px;
+    }
+
+    .feature-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+}
+
+/* DESKTOP: grillas principales de Inicio y Proyectos */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+
+    /* Inicio: mapa de áreas para organizar sus secciones */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-areas:
+            "hero image"
+            "info info";
+        gap: 24px;
+        align-items: stretch;
+    }
+
+    .area-hero {
+        grid-area: hero;
+    }
+
+    .area-info {
+        grid-area: info;
+    }
+
+    .area-image {
+        grid-area: image;
+    }
+
+    /* Proyectos: texto a la izquierda e imagen a la derecha */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "intro intro"
+            "games image";
+        gap: 24px;
+        align-items: start;
+    }
+
+    .area-intro {
+        grid-area: intro;
+    }
+
+    .area-games {
+        grid-area: games;
+    }
+
+    .area-image {
+        grid-area: image;
+    }
+
+    .feature-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
