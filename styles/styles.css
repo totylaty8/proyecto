@@ -74,7 +74,7 @@
     color: #FFE082;
 }
 
-
+/* Contenido general: en mobile las secciones se apilan */
 .container {
     padding: 16px;
 }
@@ -187,7 +187,7 @@
     font-size: 14px;
 }
 
-/* TABLET */
+/* TABLET: aprovechamos el ancho extra sin cambiar todavía al layout desktop */
 @media (min-width: 768px) {
     .site-header {
         flex-direction: row;
@@ -206,7 +206,7 @@
     }
 }
 
-/* DESKTOP: */
+/* DESKTOP: grillas principales de Inicio y Proyectos */
 @media (min-width: 1024px) {
     .container {
         max-width: 1200px;
@@ -214,7 +214,7 @@
         padding: 32px;
     }
 
-    /* Inicio:  */
+    /* Inicio: mapa de áreas para organizar sus secciones */
     .home-grid {
         display: grid;
         grid-template-columns: 1.2fr 1fr;
@@ -237,7 +237,7 @@
         grid-area: image;
     }
 
-    /* Proyectos:  */
+    /* Proyectos: texto a la izquierda e imagen a la derecha */
     .projects-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -270,7 +270,7 @@
    BOOTSTRAP Y ESTADOS INTERACTIVOS
    ===================================== */
 
-/* Navbar Bootstrap:  */
+/* Navbar Bootstrap: conserva los colores del proyecto */
 .ff-navbar {
     width: 100%;
     padding: 16px 20px;
@@ -303,7 +303,7 @@
     background-color: var(--color-acento);
 }
 
-/* Estados interactivos  */
+/* Estados interactivos para enlaces y botones de todas las páginas */
 a, button, .feature-item, .red-social {
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
