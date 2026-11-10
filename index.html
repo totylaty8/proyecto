@@ -8,20 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body class="pagina">
-    <header class="site-header">
-        <a class="site-logo" href="index.html">Final Fantasy para fanáticos</a>
-        <nav class="site-nav" aria-label="Navegación principal">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link nav-link-active" href="index.html" aria-current="page">Inicio</a></li>
+    <header class="site-header p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark ff-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand site-logo" href="index.html">Final Fantasy para fanáticos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFinalFantasy" aria-controls="navbarFinalFantasy" aria-expanded="false" aria-label="Abrir o cerrar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarFinalFantasy">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/sobre-mi.html">Sobre mí</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/proyectos.html">Proyectos</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/faq.html">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
-            </ul>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="container home-grid">
@@ -47,8 +55,30 @@
             </figure>
         </section>
     </main>
+
+    <section class="container gallery-section" aria-label="Galería de Final Fantasy">
+        <p class="eyebrow">Galería</p>
+        <h2 class="section-title">Imágenes del universo Final Fantasy</h2>
+        <div id="finalFantasyCarousel" class="carousel slide ff-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#finalFantasyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+                <button type="button" data-bs-target="#finalFantasyCarousel" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+                <button type="button" data-bs-target="#finalFantasyCarousel" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+                <button type="button" data-bs-target="#finalFantasyCarousel" data-bs-slide-to="3" aria-label="Imagen 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="assets/final.jpg" class="d-block w-100" alt="Logo de Final Fantasy"><div class="carousel-caption"><h3>Final Fantasy</h3><p>Un universo de aventuras.</p></div></div>
+                <div class="carousel-item"><img src="assets/2.jpg" class="d-block w-100" alt="Imagen de Final Fantasy II"><div class="carousel-caption"><h3>Final Fantasy II</h3><p>Historias y personajes inolvidables.</p></div></div>
+                <div class="carousel-item"><img src="assets/3.jpg" class="d-block w-100" alt="Imagen de Final Fantasy"><div class="carousel-caption"><h3>La saga</h3><p>Descubrí mundos diferentes.</p></div></div>
+                <div class="carousel-item"><img src="assets/4.jpg" class="d-block w-100" alt="Imagen de Final Fantasy III"><div class="carousel-caption"><h3>Grandes aventuras</h3><p>Clásicos para volver a jugar.</p></div></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#finalFantasyCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#finalFantasyCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Siguiente</span></button>
+        </div>
+    </section>
     <footer class="site-footer">
         <p class="footer-text">&copy; Tomás Onetto - Estudiante de Desarrollo Web</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
