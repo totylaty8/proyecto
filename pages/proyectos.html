@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Listado de juegos de la saga Final Fantasy.">
+    <meta name="description" content="Proyectos - Proyecto de práctica sobre la saga Final Fantasy.">
     <title>Proyectos | Final Fantasy para fanáticos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,65 +21,58 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarFinalFantasy">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
-                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link active" href="proyectos.html" aria-current="page">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="proyectos.html" aria-current="page">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container projects-grid">
-        <section class="page-intro area-intro">
-            <p class="eyebrow">Conocé la saga</p>
+    <main class="container page-content">
+        <section class="page-intro">
+            <p class="eyebrow">Juegos de la franquicia</p>
             <h1 class="page-title">Proyectos</h1>
-            <p>Algunos de los títulos clásicos que forman parte de esta franquicia.</p>
+            <p>En esta página seleccioné algunos títulos clásicos para mostrar diferencias entre sus propuestas y mecánicas.</p>
         </section>
-        <section class="content-section area-games">
-            <h2 class="section-title">Lista de juegos</h2>
-            <ul class="feature-list">
-                <li class="feature-item">Final Fantasy</li>
-                <li class="feature-item">Final Fantasy II</li>
-                <li class="feature-item">Final Fantasy III</li>
-            </ul>
-
-            <h2 class="section-title projects-cards-title">Conocé algunos títulos</h2>
+        <section class="content-section">
+            <h2 class="section-title">Algunos títulos para conocer</h2>
             <div class="row g-4 projects-cards">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card ff-card h-100">
-                        <img src="../assets/2.jpg" class="card-img-top" alt="Imagen de Final Fantasy II">
-                        <div class="card-body"><h3 class="card-title">Final Fantasy II</h3><p class="card-text">Una aventura clásica de la saga, con nuevos personajes y desafíos.</p>
-                            <button class="btn ff-button" type="button" data-bs-toggle="modal" data-bs-target="#gameModal">Ver más</button></div>
-                    </div>
+                    <article class="card ff-card h-100">
+                        <img src="../assets/final.jpg" class="card-img-top" alt="Imagen representativa de Final Fantasy">
+                        <div class="card-body">
+                            <h3 class="card-title">Final Fantasy</h3>
+                            <p class="card-text">El primer juego de la serie presenta un grupo de Guerreros de la Luz que debe restaurar el equilibrio de los cristales.</p>
+                        </div>
+                    </article>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card ff-card h-100">
+                    <article class="card ff-card h-100">
+                        <img src="../assets/2.jpg" class="card-img-top" alt="Imagen de Final Fantasy II">
+                        <div class="card-body">
+                            <h3 class="card-title">Final Fantasy II</h3>
+                            <p class="card-text">Esta entrega sigue a un grupo de jóvenes que se enfrenta al Imperio. Su progresión permite mejorar atributos usando las acciones durante los combates.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card ff-card h-100">
                         <img src="../assets/4.jpg" class="card-img-top" alt="Imagen de Final Fantasy III">
-                        <div class="card-body"><h3 class="card-title">Final Fantasy III</h3><p class="card-text">Explorá un mundo de fantasía y descubrí sus profesiones.</p>
-                            <button class="btn ff-button" type="button" data-bs-toggle="modal" data-bs-target="#gameModal">Ver más</button></div>
-                    </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Final Fantasy III</h3>
+                            <p class="card-text">Uno de sus elementos más conocidos es el sistema de trabajos, que permite cambiar el rol de los personajes según las necesidades del equipo.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
-                <div class="modal-dialog"><div class="modal-content ff-modal">
-                    <div class="modal-header"><h2 class="modal-title fs-5" id="gameModalLabel">Más sobre Final Fantasy</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
-                    <div class="modal-body">La saga Final Fantasy reúne juegos de rol con mundos, personajes e historias diferentes. Cada título ofrece una aventura propia.</div>
-                    <div class="modal-footer"><button type="button" class="btn ff-button" data-bs-dismiss="modal">Cerrar</button></div>
-                </div></div>
-            </div>
         </section>
-        <article class="image-section area-image">
-            <figure class="feature-figure">
-                <img class="feature-image" src="../assets/2.jpg" alt="Imagen de Final Fantasy II">
-                <figcaption>Final Fantasy II</figcaption>
-            </figure>
-        </article>
     </main>
     <footer class="site-footer">
-        <p class="footer-text">&copy; Tomás Onetto - Estudiante de Desarrollo Web</p>
+        <p class="footer-text">&copy; Tomás Onetto - Proyecto de práctica de Desarrollo Web</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

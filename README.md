@@ -1,41 +1,38 @@
 # Proyecto Final Fantasy
 
-https://totylaty8.github.io/proyecto/
+[Ver sitio web publicado](https://totylaty8.github.io/proyecto/)
 
-Sitio web sobre la saga Final Fantasy, desarrollado como práctica del curso de Desarrollo Web.
+Sitio multipágina sobre la saga Final Fantasy, realizado como práctica del curso de Desarrollo Web.
 
-Tecnologías utilizadas
+## Tecnologías utilizadas
 
-HTML5
+- HTML5
+- CSS3 (Flexbox, Grid y media queries)
+- Bootstrap 5.3.3
+- Google Fonts
 
-CSS3 (Flexbox y Grid)
+## Páginas
 
-Bootstrap 5.3.3
+- Inicio
+- Sobre mí
+- Servicios
+- Proyectos
+- Preguntas frecuentes (FAQ)
+- Contacto
 
-Google Fonts
+## Diseño responsive
 
-Páginas del sitio
+La navegación, las tarjetas, las imágenes y la distribución del contenido se adaptan a distintos tamaños de pantalla mediante Bootstrap y reglas CSS propias.
 
-Inicio
+## Objetivo del proyecto
 
-Sobre mí
+Practicar la creación de un sitio multipágina, la organización de archivos, la navegación entre documentos HTML y la personalización de componentes de Bootstrap con CSS.
 
-Servicios
+## Estructura
 
-Proyectos
+- `index.html`: página principal.
+- `pages/`: páginas internas del sitio.
+- `styles/styles.css`: estilos personalizados.
+- `assets/`: imágenes utilizadas en las páginas.
 
-Preguntas frecuentes (FAQ)
-
-Contacto
-
-Diseño responsive
-
-El sitio utiliza Bootstrap y reglas CSS con media queries para adaptar la navegación, las imágenes, las tarjetas y la distribución del contenido a distintos tamaños de pantalla.
-
-Objetivo del proyecto
-
-Aplicar los conocimientos adquiridos durante el curso mediante la creación de un sitio web multipágina, utilizando HTML, CSS y Bootstrap, incorporando navegación entre secciones y diseño adaptable a distintos dispositivos.
-
-
-
-
+El proyecto se desarrolla de manera incremental como parte del aprendizaje de Desarrollo Web.

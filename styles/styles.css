@@ -512,3 +512,163 @@ video {
         max-width: 100%;
     }
 }
+
+
+/* =====================================
+   PERSONALIZACION DE SECCIONES
+   ===================================== */
+
+/* Sobre mí */
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.about-copy {
+    margin-bottom: 0;
+    border-left: 4px solid var(--color-acento);
+    background-color: rgba(255, 255, 255, 0.72);
+}
+
+.about-copy p {
+    max-width: 68ch;
+}
+
+.about-image {
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(29, 53, 87, 0.10), rgba(181, 71, 53, 0.12));
+}
+
+.about-image .feature-image,
+.service-image .feature-image,
+.faq-image .feature-image,
+.contact-image .feature-image {
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+}
+
+/* Servicios */
+.service-card {
+    height: 100%;
+    padding: 24px;
+    border: 1px solid rgba(29, 53, 87, 0.18);
+    border-top: 4px solid var(--color-acento);
+    border-radius: 8px;
+    background-color: var(--color-blanco);
+    box-shadow: 0 4px 12px rgba(29, 53, 87, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(29, 53, 87, 0.14);
+}
+
+.service-card h3 {
+    margin: 12px 0;
+    color: var(--color-primario);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-card p {
+    margin-bottom: 0;
+}
+
+.service-number {
+    color: var(--color-acento);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.service-image,
+.faq-image,
+.contact-image {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(29, 53, 87, 0.06);
+}
+
+/* Contacto */
+.redes-sociales,
+.social-grid {
+    align-items: stretch;
+}
+
+.red-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    height: 100%;
+    padding: 24px;
+    border: 1px solid rgba(29, 53, 87, 0.16);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(29, 53, 87, 0.07);
+}
+
+.red-social:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-acento);
+    background-color: #FDF9F0;
+}
+
+.red-social p {
+    margin-bottom: 0;
+}
+
+.social-name {
+    margin: 0;
+    color: var(--color-primario);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.logo-facebook,
+.logo-instagram {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.logo-tiktok {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    font-size: 30px;
+}
+
+/* Ajustes de las páginas personalizadas en pantallas grandes */
+@media (min-width: 768px) {
+    .about-layout {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .service-card,
+    .red-social {
+        padding: 18px;
+    }
+
+    .about-image,
+    .service-image,
+    .faq-image,
+    .contact-image {
+        padding: 12px;
+    }
+}
