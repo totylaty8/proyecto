@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+
+.ff-modal {
+    .modal-header,
+    .modal-footer {
+        background-color: $color-secundario;
+    }
+
+    .modal-title {
+        color: $color-primario;
+        font-family: $fuente-titulos;
+        font-weight: 700;
+    }
+}

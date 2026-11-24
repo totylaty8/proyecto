@@ -7,7 +7,8 @@ Sitio multipágina sobre la saga Final Fantasy, realizado como práctica del cur
 ## Tecnologías utilizadas
 
 - HTML5
-- CSS3 (Flexbox, Grid y media queries)
+- CSS3
+- SCSS
 - Bootstrap 5.3.3
 - Google Fonts
 
@@ -20,19 +21,33 @@ Sitio multipágina sobre la saga Final Fantasy, realizado como práctica del cur
 - Preguntas frecuentes (FAQ)
 - Contacto
 
-## Diseño responsive
-
-La navegación, las tarjetas, las imágenes y la distribución del contenido se adaptan a distintos tamaños de pantalla mediante Bootstrap y reglas CSS propias.
-
-## Objetivo del proyecto
-
-Practicar la creación de un sitio multipágina, la organización de archivos, la navegación entre documentos HTML y la personalización de componentes de Bootstrap con CSS.
-
-## Estructura
+## Organización del proyecto
 
 - `index.html`: página principal.
-- `pages/`: páginas internas del sitio.
-- `styles/styles.css`: estilos personalizados.
-- `assets/`: imágenes utilizadas en las páginas.
+- `pages/`: páginas internas.
+- `assets/`: imágenes.
+- `scss/`: archivos SCSS organizados en parciales.
+- `scss/main.scss`: archivo principal de SCSS.
+- `styles/styles.css`: CSS compilado que utiliza el sitio.
 
-El proyecto se desarrolla de manera incremental como parte del aprendizaje de Desarrollo Web.
+## Compilación de SCSS
+
+Instalar las dependencias:
+
+    npm install
+
+Compilar los estilos:
+
+    npm run sass
+
+Compilar automáticamente al modificar archivos SCSS:
+
+    npm run sass:watch
+
+El proyecto utiliza `@use` para importar los parciales SCSS desde un único archivo principal.
+
+Bootstrap continúa integrado mediante CDN y se conservan los archivos HTML originales.
+
+## Objetivo
+
+Practicar la organización de estilos mediante SCSS, el uso de variables, mixins, anidamiento y diseño responsive.

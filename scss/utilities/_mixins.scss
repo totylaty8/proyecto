@@ -1,0 +1,11 @@
+// Mixin utilizado para mantener las secciones en columna.
+@mixin flex-columna($espaciado: 16px) {
+    display: flex;
+    flex-direction: column;
+    gap: $espaciado;
+}
+
+// Mixin para los estados interactivos originales.
+@mixin transicion-suave {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}

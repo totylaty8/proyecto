@@ -1,0 +1,23 @@
+@use "../utilities/variables" as *;
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    background-color: $color-primario;
+    color: $color-blanco;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .site-header { padding: 14px; }
+}

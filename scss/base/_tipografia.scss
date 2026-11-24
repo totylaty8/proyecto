@@ -1,0 +1,54 @@
+@use "../utilities/variables" as *;
+
+.site-logo {
+    color: $color-blanco;
+    font-family: $fuente-titulos;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-logo-subtitle {
+    color: $color-secundario;
+    font-size: 16px;
+}
+
+.page-title {
+    color: $color-primario;
+    font-family: $fuente-titulos;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-title {
+    color: $color-acento;
+    font-family: $fuente-titulos;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.eyebrow {
+    color: $color-acento;
+    font-weight: 700;
+}
+
+.note-text {
+    color: $color-nota;
+    font-size: 14px;
+}
+
+.footer-text {
+    color: $color-blanco;
+    font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+    .site-logo { font-size: 20px; }
+
+    .page-title {
+        font-size: 28px;
+        overflow-wrap: anywhere;
+    }
+
+    .section-title { font-size: 21px; }
+}

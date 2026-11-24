@@ -1,0 +1,17 @@
+@use "../utilities/variables" as *;
+
+.pagina-faq .accordion {
+    --bs-accordion-border-color: #{$color-acordeon-borde};
+    --bs-accordion-btn-bg: #{$color-blanco};
+    --bs-accordion-active-bg: #{$color-acordeon-activo};
+    --bs-accordion-active-color: var(--color-primario);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem rgba(29, 53, 87, 0.15);
+}
+
+.pagina-faq .accordion-button {
+    font-weight: 700;
+}
+
+.pagina-faq .accordion-body {
+    background-color: $color-blanco;
+}
