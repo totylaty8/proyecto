@@ -1,0 +1,46 @@
+@use "../utilities/variables" as *;
+
+.button-link {
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 20px;
+    background-color: $color-acento;
+    color: $color-blanco;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-blanco;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $color-primario;
+    }
+
+    &:active {
+        background-color: $color-active;
+    }
+}
+
+.ff-button {
+    border: 1px solid $color-acento;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: $color-acento;
+    color: $color-blanco;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+        color: $color-blanco;
+        background-color: $color-primario;
+    }
+
+    &:active {
+        color: $color-blanco;
+        background-color: $color-active;
+    }
+}

@@ -1,0 +1,19 @@
+// Archivo principal: importa los parciales en orden de organización.
+
+// Base
+@use "base/base";
+@use "base/tipografia";
+
+// Estructura
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+
+// Componentes
+@use "components/buttons";
+@use "components/cards";
+@use "components/social";
+@use "components/carousel";
+@use "components/modals";
+@use "components/faq";
+@use "components/sections";

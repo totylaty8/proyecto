@@ -1,0 +1,97 @@
+@use "../utilities/variables" as *;
+
+// Sobre mí
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.about-copy {
+    margin-bottom: 0;
+    border-left: 4px solid $color-acento;
+    background-color: rgba(255, 255, 255, 0.72);
+
+    p { max-width: 68ch; }
+}
+
+.about-image {
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(29, 53, 87, 0.10), rgba(181, 71, 53, 0.12));
+}
+
+.about-image .feature-image,
+.service-image .feature-image,
+.faq-image .feature-image,
+.contact-image .feature-image {
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+}
+
+// Servicios
+.service-card {
+    height: 100%;
+    padding: 24px;
+    border: 1px solid rgba(29, 53, 87, 0.18);
+    border-top: 4px solid $color-acento;
+    border-radius: 8px;
+    background-color: $color-blanco;
+    box-shadow: 0 4px 12px rgba(29, 53, 87, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 18px rgba(29, 53, 87, 0.14);
+    }
+
+    h3 {
+        margin: 12px 0;
+        color: $color-primario;
+        font-family: $fuente-titulos;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    p { margin-bottom: 0; }
+}
+
+.service-number {
+    color: $color-acento;
+    font-family: $fuente-titulos;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.service-image,
+.faq-image,
+.contact-image {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(29, 53, 87, 0.06);
+}
+
+// Ajustes responsive de las secciones personalizadas
+@media (min-width: 768px) {
+    .about-layout {
+        grid-template-columns: 1.2fr 0.8fr;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .service-card,
+    .red-social {
+        padding: 18px;
+    }
+
+    .about-image,
+    .service-image,
+    .faq-image,
+    .contact-image {
+        padding: 12px;
+    }
+}

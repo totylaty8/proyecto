@@ -1,0 +1,27 @@
+// Variables Sass derivadas de la paleta original del proyecto.
+$color-primario: #1D3557;
+$color-secundario: #F7F1E3;
+$color-acento: #B54735;
+$color-texto: #263238;
+$color-blanco: #FFFFFF;
+$color-faq: #EEE7F6;
+$color-feature: #EAF0F6;
+$color-hover: #FFE082;
+$color-hover-feature: #D8E4F0;
+$color-card-hover: #FDF9F0;
+$color-active: #7D2D22;
+$color-negro: #111111;
+$color-nota: #455A64;
+$color-acordeon-borde: #D5C9E3;
+$color-acordeon-activo: #E2D8EF;
+$fuente-principal: 'Roboto', Arial, sans-serif;
+$fuente-titulos: 'Montserrat', Arial, sans-serif;
+
+// Se conservan las propiedades CSS originales para componentes Bootstrap.
+:root {
+    --color-primario: #{$color-primario};
+    --color-secundario: #{$color-secundario};
+    --color-acento: #{$color-acento};
+    --color-texto: #{$color-texto};
+    --color-blanco: #{$color-blanco};
+}
