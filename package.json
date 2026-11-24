@@ -1,10 +1,8 @@
 {
-  "name": "proyecto-finalfantasy",
-  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "sass": "sass scss/main.scss styles/styles.css",
-    "sass:watch": "sass --watch scss/main.scss:styles/styles.css"
+    "sass": "sass --no-source-map scss/main.scss styles/styles.css",
+    "sass:watch": "sass --watch --no-source-map scss/main.scss:styles/styles.css"
   },
   "devDependencies": {
     "sass": "^1.108.2"
